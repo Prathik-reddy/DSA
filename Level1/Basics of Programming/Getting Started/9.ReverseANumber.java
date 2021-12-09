@@ -7,7 +7,7 @@ import java.util.*;
      int n = scn.nextInt();
      while(n>0){
          int rem=n%10;
-         System.out.println(rem)
+         System.out.println(rem);
          n=n/10;
      }
     }
