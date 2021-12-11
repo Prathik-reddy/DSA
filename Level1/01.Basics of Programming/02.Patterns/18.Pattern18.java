@@ -1,0 +1,36 @@
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+
+     // write ur code here
+     int n = scn.nextInt();
+     int spc=0;
+     int star=n;
+
+     for(int i =1;i<=n;i++){
+         for(int j=1;j<=spc;j++){
+             System.out.print("\t");
+         }
+         for(int j=1;j<=star;j++){
+             if(i>1 && i<=n/2 && j>1 && j<star){
+                 System.out.print("\t");
+             }else{
+             System.out.print("*\t");
+             }
+         }
+
+         if(i<=n/2){
+             star-=2;
+             spc++;
+         }else{
+             star+=2;
+             spc--;
+         }
+         System.out.println();
+     }
+
+ }
+}
