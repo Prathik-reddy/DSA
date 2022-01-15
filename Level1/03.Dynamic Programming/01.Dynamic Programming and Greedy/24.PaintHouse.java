@@ -4,6 +4,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) throws Exception {
+        
         Scanner scn = new Scanner(System.in);
         int houses = scn.nextInt();
         int[][] arr = new int[houses][3];
